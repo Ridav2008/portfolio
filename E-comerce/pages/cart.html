@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>cart</title>
+</head>
+<body>
+    <header class="flex">
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span style="font-weight: bold;">MST<p style="letter-spacing: .5px;">shopping</p></span>
+        </a>
+        <div class="links">
+            <a class="cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><p id="price">$0.00</p><span class="product-number" id="number">0</span></a>
+            <a class="Sing-in" href="./sign-in.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Sing in</a>
+            <a class="Register" href="./Register.html"><i class="fa-solid fa-user-plus"></i>Register</a>
+        </div>
+    </header>
+    <main>
+        <section id="Shop" class="Shop">
+            <!-- <article class="product flex">
+                <button><i class="fa-solid fa-trash-can"></i></button>
+                    <p class="price">$129</p>
+            <div class="flex" >
+                <button class="decrease">-</button>
+                    <div class="quantity flex"><p>3</p></div>
+                <button class="increase">+</button>
+            </div>
+                <p class="title">product Title</p>
+                <img style="border-radius: .2rem;" width="70" height="70" src="../images/4.webp" alt="">
+            </article>
+            <article class="product flex">
+                <button><i class="fa-solid fa-trash-can"></i></button>
+                    <p class="price">$129</p>
+            <div class="flex" >
+                <button class="decrease">-</button>
+                    <div class="quantity flex"><p>3</p></div>
+                <button class="increase">+</button>
+            </div>
+                <p class="title">product Title</p>
+                <img style="border-radius: .2rem;" width="70" height="70" src="../images/5.webp" alt="">
+            </article>
+            <article class="product flex">
+                <button><i class="fa-solid fa-trash-can"></i></button>
+                    <p class="price">$129</p>
+            <div class="flex" >
+                <button class="decrease">-</button>
+                    <div class="quantity flex"><p>3</p></div>
+                <button class="increase">+</button>
+            </div>
+                <p class="title">product Title</p>
+                <img style="border-radius: .2rem;" width="70" height="70" src="../images/2.webp" alt="">
+            </article> -->
+        </section>
+        <button id="clear" class="clear"><i class="fa-solid fa-trash-can"></i> clear cart</button>
+        <section class="summary">
+            <h2>Cart Summary</h2>
+            <div class="flex">
+                <p class="Subtotal">Subtotal</p>
+                <p id="Subtotal">$0</p>
+            </div>
+            <button disabled class="checkout">CHECKOUT</button>
+            <a href="./sign-in.html">Please sing in to continue.</a>
+        </section>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>

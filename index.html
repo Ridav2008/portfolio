@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Rida Ezzahiry, Front End Developer, HTML, CSS, JavaScript, React, Portfolio front end, Web Development, Projects, Responsive Design , rida Ezzahiry">
+    <meta name="description" content="Official portfolio of Rida Ezzahiry, Front-End developer specializing in HTML, CSS, JavaScript, and React. Discover my projects and skills...">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Front End</title>
+    <link rel="icon" type="image/jpeg" href="Photos/title img.jpg">
+</head>
+<body>
+    <div class="containHome">
+        <div class="navebare">
+            <div class="logos">
+                <a href="#Home"><img class="logo" src="Photos/logo.svg" alt="logo"></a>  
+                <h1 class="present">My portfolio <span>front-end</span></h1>
+            </div>
+                <div onclick="getMenu()" id="menu">☰</div>
+                <ul>
+                    <li onclick="removeMenu()"><a href="#Home">Home</a></li>
+                    <li onclick="removeMenu()"><a href="#skills">skills</a></li>
+                    <li onclick="removeMenu()"><a href="#works"> works</a></li>
+                    <li onclick="removeMenu()"><a href="#contact">contact</a></li>
+                    <li class="Exit" onclick="removeMenu()"><p>Exit</p></li>
+                </ul>
+        </div>
+        <hr>
+        <div class="HomePage" id="Home">
+            <div class="background">
+            </div>
+            <div class="content">
+                <img src="Photos/arrow.svg" alt=""> 
+                <h2>Home the <span> Web</span></h2>
+                <p>Hello everyone in my portfolio,Im rida Ezzahiry , this portfolio presents an overview about me and my projects in front-end web development, I help individuals and businesses transform their ideas into a distinctive digital presence.. I am here to get your work done no matter what </p>
+                <div class="herobtns">
+                    <a class="cv" href="#works">
+                        See more
+                         <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="MysKills" id="skills">
+        <h2 class="title1">Skills <span>used</span></h2>
+        <div class="content-skills">
+            <div id="Html-content" class="comtent">
+                <div class="Title">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2 class="moo">html</h2>
+                </div>
+                <div class="des">
+                    <p>I excel at building the basic structure of websites using HTML in an organized and easy-to-understand way, with a focus on simplicity and clarity.</p>
+                </div>
+            </div>
+            <div id="css-content" class="comtent">
+                <div class="Title">
+                    <i class="fa-brands fa-css"></i>
+                    <h2 class="moo">css</h2>
+                </div>
+                <div class="des">
+                    <p>I use CSS to design modern and responsive interfaces with precision. I work smoothly with Flexbox and Grid, ensuring consistency in colors and spacing, in addition to creating smooth effects and animations using transition and animation.</p>
+                </div>
+            </div>
+            <div id="js-content" class="comtent">
+                <div class="Title">
+                    <i class="fa-brands fa-js"></i>
+                    <h2 class="moo">JavaScript</h2>
+                </div>
+                <div class="des">
+                    <p>I control page interactivity professionally through JavaScript, whether in manipulating elements (DOM manipulation) or creating advanced dynamic functions. I focus on writing clean code based on modern concepts (ES6+), and applying logical thinking in solving programming problems.</p>
+                </div>
+            </div>
+            <div id="Rc-content" class="comtent">
+                <div class="Title">
+                    <i class="fa-brands fa-react"></i>
+                    <h2 class="moo">React.js</h2>
+                </div>
+                <div class="des">
+                    <p>I use React.js to develop interactive and fast user interfaces, and to organize website components in a professional and easily updatable manner.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+ <!-- Project Section Starts Here-->
+    <section class="project" id="works">
+        <div class="container3">
+            <h4 class="font-sm">My Selected Work</h4>
+            <div class="row">
+                <div id="e-co1" class="project-content">
+                 <div  class="project-work">
+                     <div class="project-work-image">
+                         <img src="my wokrs/e-ecomerce.png" alt="E-commerce">
+                     </div>
+                     <div class="project-work-text">
+                         <h5 class="font-mini"><a href="E-comerce/index.html">Project E-commerce</a></h5>
+                         <a href="E-comerce/index.html" class="right-arrow-icon">               
+                             <span>View Project</span>                    
+                             <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M33 12.03H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                         </a>
+                     </div>
+                 </div>
+                </div>
+                
+                <div id="e-co2" class="project-content">
+                    <div class="project-work">
+                        <div class="project-work-image">
+                            <img src="my wokrs/project.png" alt="project css">
+                        </div>
+                        <div class="project-work-text">
+                            <h5 class="font-mini"><a href="مشروع css/index.html">مشروع css</a></h5>
+                            <a href="مشروع css/index.html" class="right-arrow-icon">               
+                                <span>View Project</span>                    
+                                <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33 12.03H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                     </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="e-co3" class="project-content">
+                    <div class="project-work">
+                        <div class="project-work-image">
+                            <img src="my wokrs/fulter js.png" alt="fulter js">
+                        </div>
+                        <div class="project-work-text">
+                            <h5 class="font-mini"><a href="felter JS/inedx.html">fulter js</a></h5>
+                            <a href="felter JS/inedx.html" class="right-arrow-icon">               
+                                <span>View Project</span>                    
+                                <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33 12.03H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                     </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <div id="e-co4"  class="project-content">
+                    <div class="project-work">
+                        <div class="project-work-image">
+                            <img src="my wokrs/مشروع إدارة المنتجات.png" alt="مشروع إدارة المنتجات">
+                        </div>
+                        <div class="project-work-text">
+                            <h5 class="font-mini"><a href="مشروع إدارة المنتجات/index.html">مشروع إدارة المنتجات</a></h5>
+                            <a href="مشروع إدارة المنتجات/index.html" class="right-arrow-icon">               
+                                <span>View Project</span>                    
+                                <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33 12.03H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M27.95 4.80005L34 12.0288L27.95 19.2588" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                     </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+<!-- Call To Action Section Starts Here-->
+   <section class="call-action">
+       <div class="container">
+           <div class="call-action-content">
+            <h4>Got a Project in Mind? Let's Make</h4>
+            <h4>Something Awesome Together.</h4>
+            <a href="#contact" class="btn">
+                Hire Me             
+                <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M31 12.025H1" stroke="#DFE3EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25.9502 6.00006L32.0002 12.0241L25.9502 18.0491" stroke="#DFE3EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>    
+            </a>
+            <img class="call-ac-shape-1" src="images/call-sm-shape.png" alt="shape">
+            <img class="call-ac-dot-1" src="images/call-dot-1.png" alt="dot">
+            <img class="call-ac-dot-2" src="images/call-action-lg-shape.png" alt="dot">
+            <img class="call-ac-shape-2" src="images/call-lg-shape.png" alt="dot">
+        </div>
+       </div>
+   </section>
+  <!-- Contact Section -->
+    <section  class="contact-section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Initialize Connection</h2>
+            <p class="section-subtitle">Ready to transform your vision into reality? Let's connect.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.google.com/maps/place/Poste+Maroc/@35.8427319,-5.568206,14z/data=!4m6!3m5!1s0xd0c9cd26d0dafa1:0x15b0194d0ae779ed!8m2!3d35.8406097!4d-5.5579703!16s%2Fg%2F11c0rm7xzz?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <h4>Location</h4>
+                        <p>ksar sghir / taghramt</p>
+                    </div>
+                </a>
+                <a href="mailto:githubrida@gmail.com?subject=Website%20Development&body=Hello%2C%20I%20would%20like%20to%20contact%20you%20regarding%20website%20development" class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-text">
+                        <h4>Email</h4>
+                        <p>githubrida@gmail.com</p>
+                    </div>
+                </a>
+                
+                <a href="https://wa.me/212637780664?text=Hello%2C%20I%20would%20like%20to%20contact%20you%20regarding%20website%20development" class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-text">
+                        <h4>Phone</h4>
+                        <p>+212 637780664</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.instagram.com/rida__ezzahiri/?next=%2F" target="_blank" class="info-item">
+                    <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="info-text">
+                        <h4>My instagram</h4>
+                        <p>rida__ezzahiri</p>
+                    </div>
+                </a>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Transmit Message</button>
+            </form>
+        </div>
+    </section>
+    <hr>
+    <footer class="Built">
+        <p>Built by <span>rida Ezzahiri</span> © 2025</p>
+    </footer>
+    <div  id="top">↑</div>
+    <script src="js/menu.js"></script>
+</body>
+</html>

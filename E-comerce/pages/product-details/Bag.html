@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/product-details.css">
+    <title>product details</title>
+</head>
+<body>
+    <header class="flex">
+        <a href="../../index.html" class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span style="font-weight: bold;">MST<p style="letter-spacing: .5px;">shopping</p></span>
+        </a>
+        <div class="links">
+            <a class="cart" href="../cart.html"><i class="fa-solid fa-cart-shopping"></i><p id="price">$0.00</p><span class="product-number" id="number">0</span></a>
+            <a class="Sing-in" href="../sign-in.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Sing in</a>
+            <a class="Register" href="../Register.html"><i class="fa-solid fa-user-plus"></i>Register</a>
+        </div>
+    </header>
+    <main class="flex">
+        <img src="../../images/2.webp" alt="">
+        <div class="product-details">
+            <div  class="flex">
+                <h2>carton astronaut Bag</h2>
+                <p class="price">$20</p>
+            </div>
+            <p class="des">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Accusamus impedit ullam neque veritatis officia iste alias 
+                exercitationem amet deserunt voluptas.
+            </p>
+            <button class="flex add-to-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <p onclick="addd(20),showData('../images/2.webp' , 20 ,'Bag')"  id="add">add to cart</p>
+            </button>
+        </div>
+    </main>
+     <!-- footer -->
+      <footer class="Built">
+        <p>front end devleper by <span>Rida Ezzahiry</span>©2025</p>
+      </footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

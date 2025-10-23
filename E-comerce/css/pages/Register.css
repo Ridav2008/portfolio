@@ -1,0 +1,74 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+}
+header{
+    background: #212529;
+    color: aliceblue;
+}
+.contain{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+}
+@media (max-width:580px) {
+    .contain{
+        width: 80%;
+    }
+}
+.contain form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid #cce7d0;
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.contain form h2{
+    margin-bottom: 5px;
+}
+.contain form input{
+    padding: 12px;
+    width: 70%;
+    margin: 4px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    outline: none;
+    transition: .6s;
+}
+.contain form input:focus{
+    border: 1px solid #cce7d0;
+    scale: 1.01;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.contain form input:nth-child(1){
+    border: none;
+    scale: 1;
+    box-shadow: 0 0 0;
+}
+.contain form .Check{
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+.contain form .Check label{
+    position: absolute;
+    right: -40px;
+    width: 70%;
+}
+.contain form button{
+    background: linear-gradient(145deg, #007bff, #0056d2);
+    color: white;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: .9rem;
+    gap: .33rem;
+    margin: 25px;
+}

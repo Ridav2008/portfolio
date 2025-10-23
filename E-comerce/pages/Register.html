@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/Register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register</title>
+</head>
+<body>
+    <header class="flex">
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span style="font-weight: bold;">MST<p style="letter-spacing: .5px;">shopping</p></span>
+        </a>
+        <div class="links">
+            <a class="cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><p id="price">$0.00</p><span class="product-number" id="number">0</span></a>
+            <a class="Sing-in" href="sign-in.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Sing in</a>
+            <a class="Register" href="Register.html"><i class="fa-solid fa-user-plus"></i>Register</a>
+        </div>
+    </header>
+    <div class="contain ">
+        <form>
+            <h2><i class="fa-solid fa-user-plus"></i>Register</h2>
+            <input required type="text" name="Username" placeholder="Username">
+            <input required type="email" name="email address" placeholder="Email address ">
+            <input required type="password" name="Password" placeholder="Password">
+
+            <div class="Check flex">
+                <input required id="Check" type="checkbox">
+                <label for="Check">Check me out</label>
+            </div>
+            <button><p>Create Account</p></button>
+        </form>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

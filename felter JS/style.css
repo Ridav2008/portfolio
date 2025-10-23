@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #333;
+    
+}
+.container{
+    background-color: #222;
+    width: 80vw;
+    padding: 20px;
+    margin: 20px auto;
+
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+.img-box{
+    height: 80vh;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-self: center;
+    align-items: center;
+}
+.img img , canvas{
+    max-width: 45vw;
+    max-height: 60vh;
+}
+.upload input{
+    display: none;
+}
+.upload label{
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px #ddd dashed;
+    cursor: pointer;
+}
+.filter ul ,.filter ul li {
+    display: flex;
+    flex-direction:column ;
+    gap: 15px;
+    direction: rtl;
+}
+.filter ul li label {
+    color: #fff;
+}
+.filter ul li:last-child{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.filter ul li a,span{
+    color: #ddd;
+    padding: 10px 20px;
+    background-color: #4c00ffa0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media screen and (max-width:650px) {
+    .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .img img , canvas{
+    max-width: 80vw;
+}
+}

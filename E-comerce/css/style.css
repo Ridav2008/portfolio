@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* colors */
+:root{
+    --font: #9fc5ef;
+    --icons: #40464d
+}
+/* my classes */
+.flex{
+    display: flex;
+    align-items: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+.border{
+    border: 4px solid red;
+}
+/* general sttyle */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+html{
+    box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+*, *::before ,*::after {
+    box-sizing: inherit;
+}
+/* Html elements */
+a,button{
+    all: unset;
+    display: inline-block;
+    transition: .4s;
+}
+button:active , a:active{
+    scale: .9;
+}
+button:hover , a:hover{
+    cursor: pointer;
+}
+
+li{
+    margin-left: 2rem;
+    list-style: none;
+}
+/* general style this project */
+.navebare{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #212529;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    transition: .3s ;
+}
+.links.fa-solid{
+    color:var(--icons) ;
+    transition: .4s;
+    margin-right: .3rem;
+}
+/* main contents (products)*/
+main{
+    margin-inline: auto;
+}
+main .erecommended {
+    margin: 2.3rem 0 2rem 2%;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 16px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: all .3s linear;
+    position: relative;
+}
+.products .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+.products .pro img {
+    width: 100%;
+    border-radius: 12px;
+}
+.products .pro .des {
+    text-align: start;
+  padding: 10px 0 ;
+}
+.products .pro .des span{
+    color: #606063;
+    font-size: 17px;
+}
+.products .pro .des h5{
+    padding-top: 3px;
+ color: #484343;
+  font-size: 15px;
+}
+.products .pro .des i{
+    font-size: 13px;
+  color: rgb(243, 181, 32);
+}
+.products .pro .des h4{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: brown;
+}
+.products .pro .cart{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 35px;
+    height: 45px;
+    background-color: #1976d2;
+    border-radius: 50%;
+}
+.products .pro .cart i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%) translateY(-50%);
+    font-size: 25px;
+    color: #fff;
+}
+@media screen and (max-width:577px)  {
+    .products .pro{
+        width: 100%;
+    }
+    main .erecommended {
+    margin: 2.3rem 0 2rem 2rem;
+    font-size: 1.4rem;
+    }
+}
+/* calll to action */
+#banner{
+  background: url(../images/banner.png) center/cover;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#banner h4{
+  color: #fff;
+  font-size: 15px;
+}
+#banner h2{
+  color: #ddd;
+  font-size: 30px;
+  padding: 10px 0 ;
+}
+/* location */
+.location{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.location .location-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 45%;
+    padding: 50px;
+}
+.location .location-content .contact h3{
+    font-size: 15px;
+}
+.location .location-content h4{
+    color: #838383;
+    font-weight: 500;
+}
+.location .location-content h3{
+    margin-bottom: 20px;
+}
+.location .location-content footer{
+    margin-bottom: 20px;
+}
+@media (max-width:940px) {
+    .location .location-content{
+        width: 100%;
+    }
+}
+@media (max-width:577px) {
+    #banner{
+        height: 40vh;
+    }
+    #banner h2{
+        padding: 0 10px;
+        margin-top: 5px;
+    }
+    .location .location-content{
+        padding: 10px;
+    }
+
+}

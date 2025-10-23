@@ -1,0 +1,73 @@
+/* header section */
+header.flex{
+    justify-content: space-between;
+    padding: 1.2rem 10%;
+
+}
+header.flex .Sing-in{
+    margin: 0 1rem;
+}
+header.flex .Sing-in ,.Register {
+    border: 3px solid black;
+    padding: 0.44rem 1rem;
+    border-radius:55px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+header.flex .Sing-in:hover ,.Register:hover{
+    background-color: black;
+    color: var(--font);
+}
+.Sing-in:hover .fa-solid ,.Register:hover .fa-solid{
+    color: var(--font);
+}
+.cart{
+    position: relative;
+    background-color: black;
+    color: var(--font);
+    font-size: .9rem;
+    padding: .44rem 1.1rem .44rem .6rem;
+    border-radius: 22px;
+}
+.cart i, .cart p, .cart span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cart .product-number{
+    position: absolute;
+    right: -3px;
+    top: -5px;
+    background-color: rgb(255, 63, 63);
+    height: 20px;
+    width: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 9px;
+    font-weight: bold;
+}
+.cart .fa-solid{
+    color: var(--font);
+}
+/* left section (logo) */
+.fa-bag-shopping{
+    font-size: 2rem;
+}
+@media (max-width:600px) {
+    .logo{
+        display: none;
+    }
+    header.flex{
+        justify-content: center;
+        padding: 1.2rem 0;
+    }
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+}
