@@ -79,28 +79,28 @@ function handleScroll() {
   }
 //(عرض أقل أو يساوي 450px)
   else if (w <= 450) {
-    if (y > 102) {
+    if (y > 92) {
       HtmlContent.style.animationName = 'skills2'
     }
-    if (y > 341) {
+    if (y > 246) {
       cssContent.style.animationName = 'skills'
     }
-    if (y > 573) {
+    if (y > 442) {
       jsContent.style.animationName = 'skills2'
     }
-    if (y > 772) {
+    if (y > 665) {
       RcContent.style.animationName = 'skills'
     }
-    if (y > 1170 ) {
+    if (y > 986 ) {
       eCo1.style.animationName = 'totop';
     }
-    if (y > 1497) {
+    if (y > 1282) {
       eCo2.style.animationName = 'totop';
     }
-    if (y > 1806) {
+    if (y > 1589) {
       eCo3.style.animationName = 'totop';
     }
-    if (y > 2102) {
+    if (y > 1908) {
       eCo4.style.animationName = 'totop';
     }
   }
