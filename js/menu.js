@@ -91,16 +91,16 @@ function handleScroll() {
     if (y > 623) {
       RcContent.style.animationName = 'skills'
     }
-    if (y > 953 ) {
+    if (y > 933 ) {
       eCo1.style.animationName = 'totop';
     }
-    if (y > 1255) {
+    if (y > 1235) {
       eCo2.style.animationName = 'totop';
     }
-    if (y > 1553) {
+    if (y > 1533) {
       eCo3.style.animationName = 'totop';
     }
-    if (y > 1860) {
+    if (y > 1850) {
       eCo4.style.animationName = 'totop';
     }
   }
