@@ -404,7 +404,8 @@ p{
 .section-header{
     width: 100%;
     text-align: center;
-    height: 20vh;
+    height: fit-content;
+    margin: 80px  0;
     font-size: 23px;
 }
 .contact-section {
