@@ -682,7 +682,6 @@ a.info-item {
     }
     .MysKills .content-skills .comtent{
         flex: 0 80%;
-        height: fit-content;
     }
     .contact-container {
 		grid-template-columns: 1fr;
