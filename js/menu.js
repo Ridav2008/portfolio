@@ -29,7 +29,6 @@ topp.addEventListener('click', () => {
 });
 
 
-
 // menu with animation
 function getMenu() {
   if (innerWidth <= 1052) {
@@ -56,69 +55,18 @@ window.removeMenu = function () {
   setTimeout(() => { dashbord.style.display = 'none'; menu.style.display = 'flex'; }, 400);
 };
 
-
-
 // أنيميشن السكرول
-function handleScroll() {
-  const w = window.innerWidth;
-  const y = window.scrollY;
-//  الحالة 1: شاشة كمبيوترأكبر من 980px
-  if (w >= 980) {
-    if (y > 138) {
-      jsContent.style.animationName = 'totop'
-      HtmlContent.style.animationName = 'totop'
-      cssContent.style.animationName = 'totop'
-      RcContent.style.animationName = 'totop'
+let elems = [HtmlContent, jsContent, cssContent, RcContent, eCo1, eCo2, eCo3, eCo4].filter(Boolean);
+let io = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationName = 'totop';
+      observer.unobserve(entry.target);
     }
-    if (y > 808) {
-      eCo1.style.animationName = 'totop';
-      eCo2.style.animationName = 'totop';
-      eCo3.style.animationName = 'totop';
-      eCo4.style.animationName = 'totop';
-    }
-  }
-//(عرض أقل أو يساوي 450px)
-  else if (w <= 450) {
-    if (y > 65) {
-      HtmlContent.style.animationName = 'skills2'
-    }
-    if (y > 203) {
-      cssContent.style.animationName = 'skills'
-    }
-    if (y > 400) {
-      jsContent.style.animationName = 'skills2'
-    }
-    if (y > 623) {
-      RcContent.style.animationName = 'skills'
-    }
-    if (y > 933 ) {
-      eCo1.style.animationName = 'totop';
-    }
-    if (y > 1235) {
-      eCo2.style.animationName = 'totop';
-    }
-    if (y > 1533) {
-      eCo3.style.animationName = 'totop';
-    }
-    if (y > 1850) {
-      eCo4.style.animationName = 'totop';
-    }
-  }
-//(بين 450 و 1052)
-  else if (w > 450 && w <= 1052) {
-    if (y > 102) {
-      jsContent.style.animationName = 'skills'
-      HtmlContent.style.animationName = 'skills2'
-      cssContent.style.animationName = 'skills2'
-      RcContent.style.animationName = 'skills'
-    }
-    if (y > 685) {
-      eCo1.style.animationName = 'totop';
-      eCo2.style.animationName = 'totop';
-      eCo3.style.animationName = 'totop';
-      eCo4.style.animationName = 'totop';
-    }
-  }
-}
-// إضافة الأحداث
-window.addEventListener('scroll', handleScroll);
+  });
+}, {
+  threshold: 0,            // نريد التفعيل بمجرد دخول العنصر إلى مجال المراقبة
+  rootMargin: '0px 0px 10% 0px'  // هذا يجعل التفعيل قبل ظهور العنصر فعليًا بنسبة 20%
+});
+
+elems.forEach(el => io.observe(el));

@@ -235,18 +235,6 @@ hr{
     color: #f2f2f2;
     font-size: 23px;
 }
-@keyframes  skills{
-    0%{
-        translate:  111px 0;
-        opacity: 0%;
-    }
-}
-@keyframes  skills2{
-    0%{
-        translate:  -111px 0;
-        opacity: 0%;
-    }
-}
 @media (max-width:850px) {
     .MysKills .content-skills .comtent{
         height: fit-content;
@@ -680,6 +668,9 @@ a.info-item {
     }
 }
 @media (max-width:850px) {
+    .content{
+        height: 35vh;
+    }
     .MysKills{
         height: fit-content;
     }
@@ -692,4 +683,7 @@ a.info-item {
     .contact-container {
 		grid-template-columns: 1fr;
 	}
+    .section-header{
+        margin-bottom: 130px;
+    }
 }
